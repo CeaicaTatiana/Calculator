@@ -13,17 +13,36 @@
     }
     #calculator {
       background-color: #dde;
-      width: 300px;
+      border: 1px solid black;
+      width: 292px;
       height: 400px;
       margin: auto;
     }
     .display {
       border: 1px solid black;
-      width: 300px;
-      height: 50px;
+      width: 292px;
+      height: 60px;
       text-align: right;
       line-height: 80px;
+      font-size: 40px;
     }
+
+    .cell {
+      display: inline-block; /*put the buttons on the same line */
+    }
+
+    button {
+      display: block;
+      width: 70px;
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .equal {
+      display: block;
+      width: 143px;
+    }
+
 
     /* #calculator {
       width: 300px;
@@ -56,7 +75,7 @@
     <div class="body">
       <div id="calculator">
         <div class="display">
-          display
+          0
         </div>
         <div class="buttons">
           <div class="rows">
@@ -86,7 +105,7 @@
             <div class="rows">
               <div class="cell"><button type="button" name="button">0</button></div>
               <div class="cell"><button type="button" name="button">,</button></div>
-              <div class="cell"><button type="button" name="button">=</button></div>
+              <div class="cell"><button class="equal" type="button" name="button">=</button></div>
               </div>
 
         </div>
