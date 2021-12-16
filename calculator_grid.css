@@ -1,5 +1,7 @@
 body {
   background-color: grey;
+  width: 100%;
+  height: 100%;
 }
 
 .calculator {
@@ -9,15 +11,24 @@ body {
   margin: auto;
   margin-top: 15%;
   border: 1px solid black;
+  border-radius: 5px;
 
 }
 
 .display {
-  height: 50px;
+  height: 63px;
   border: 1px solid black;
   background-color: #b4acbf;
 }
 
 .buttons {
   display: grid;
-  grid-template-columns: 70px 70px 70px 70px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  width: 70px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
