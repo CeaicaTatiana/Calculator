@@ -12,7 +12,6 @@ body {
   margin-top: 15%;
   border: 1px solid black;
   border-radius: 5px;
-
 }
 
 .display {
@@ -23,25 +22,24 @@ body {
   display: grid;
   justify-content: end;
   align-content: end;
-
-
-
-
 }
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 
 }
 
-button {
+button{
   width: 70px;
   padding: 20px;
   font-size: 20px;
   text-align: center;
   border: 1px solid black;
+  cursor: pointer;
 }
+
 .grey_operator{
   background-color: #837b8c;
 }
@@ -50,6 +48,6 @@ button {
   background-color: orange;
 }
 
-#zero {
-
+.zero {
+  
 }
